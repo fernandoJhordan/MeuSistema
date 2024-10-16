@@ -13,8 +13,8 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //Operadores
-        float nota1, nota2, nota3, nota4, media;
+        //Switch
+        int valor;
 
         public FrmMeuSistema()
         {
@@ -23,22 +23,28 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            nota1 = float.Parse(txtNota1.Text);
-            nota2 = float.Parse(txtNota2.Text);
-            nota3 = float.Parse(txtNota3.Text);
-            nota4 = float.Parse(txtNota4.Text);
-            media = (nota1 + nota2 + nota3 + nota4) / 4;
-            
-            txtRes.Text = Convert.ToString(media);
-            
-            //condição IF
-            if (media >= 6)
-            {
-                lblRes.Text = "APROVADO";
-            }
-            else {
-                lblRes.Text = "REPROVADO";
-            }
+            valor=int.Parse(txtValor.Text);
+
+            //Switch
+            //switch (valor)
+            //{
+            //    case 10: //caso for 10 -> 1° opcao
+            //        lblRes.Text = "É 10";
+            //        //instruções
+            //        break;
+            //    case 11:
+            //        lblRes.Text = "É 11";
+            //        break;
+            //    case 50:
+            //        lblRes.Text = "É 50";
+            //        break;
+            //    default:
+            //        lblRes.Text = "Não foi encontrado...";
+            //        break;
+            //}
+
+            //Ternario
+            lblRes.Text = valor == 10 ? "SIMMMM" : "NÃAAAAO";
 
         }
     }
