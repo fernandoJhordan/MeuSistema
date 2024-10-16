@@ -23,5 +23,16 @@ namespace MeuSistema
         {
             MessageBox.Show(_nome + " " + _idade);
         }
+
+        public void teste2(int i)
+        {
+            MessageBox.Show(_nome + " " + i);
+        }
+
+        public void teste2(int i, int x)
+        {
+            int res = i + x;
+            MessageBox.Show(_nome + " " + res);
+        }
     }
 }
