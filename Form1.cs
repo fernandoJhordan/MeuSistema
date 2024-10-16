@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,17 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        string meuNome = "Fernando Brandão"; //modificador e tipo texto
+        //modificador // tipo  // texto
+        public string meuNome;
+        private int valor;
+        protected String senha;
+
+        //mais usados
+        int numeros = 0;
+        string endereco;
+        bool estaPago;
+        double valores;
+        decimal vPago;
 
 
 
