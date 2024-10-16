@@ -17,7 +17,14 @@ namespace MeuSistema
         //metodo
         public void falar() 
         {
-            MessageBox.Show("Olá! sou " + Nome + " e tenho " + Idade + " anos.");
+            MessageBox.Show(Resposta());
+        }
+
+        private string Resposta()
+        { 
+            string fala = "Olá! sou " + Nome + " e tenho " + Idade + " anos.";
+            return fala;
+             
         }
 
     }

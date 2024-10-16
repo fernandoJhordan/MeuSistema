@@ -29,10 +29,6 @@ namespace MeuSistema
             p1.Altura = 1.67;
             p1.Nacionalidade = "PT";
 
-            lblNome.Text = p1.Nome;
-            lblIdade.Text=p1.Idade.ToString();
-            lblAltura.Text=p1.Altura.ToString();
-
             p1.falar();
         }
 
