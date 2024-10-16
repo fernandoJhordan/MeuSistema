@@ -31,7 +31,9 @@ namespace MeuSistema
 
             lblNome.Text = p1.Nome;
             lblIdade.Text=p1.Idade.ToString();
-            lblAltura.Text=p1.Altura.ToString();    
+            lblAltura.Text=p1.Altura.ToString();
+
+            p1.falar();
         }
 
     }
