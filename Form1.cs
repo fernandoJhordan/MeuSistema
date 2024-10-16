@@ -13,7 +13,7 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //FOR
+        //While // Do While
 
         public FrmMeuSistema()
         {
@@ -22,13 +22,20 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            int n = 20;
-            for (int i = 1; i <= n; i++) 
+            int n = 1;
+            //while (n <= 30) 
+            //{
+            //    lista.Items.Add(n);
+            //    n++;
+            //}
+
+            do
             {
-                lista.Items.Add("Item: "+i);
-            }
-            
-            
+                lista.Items.Add(n++);
+            } while (n <= 100);
+
+
+
         }
     }
 }
