@@ -9,23 +9,19 @@ namespace MeuSistema
 {
     class Pessoas
     {
-        public string Nome;
-        public int Idade;
-        public double Altura;
-        public string Nacionalidade;
 
-        //metodo
-        public void falar() 
-        {
-            MessageBox.Show(Resposta());
-        }
+        public string _nome { get; set; }
+        public int _idade { get; set; }
 
-        private string Resposta()
+        public Pessoas(string nome, int idade) 
         { 
-            string fala = "Olá! sou " + Nome + " e tenho " + Idade + " anos.";
-            return fala;
-             
+            _nome=nome;
+            _idade=idade;
         }
 
+        public void teste2()
+        {
+            MessageBox.Show(_nome + " " + _idade);
+        }
     }
 }

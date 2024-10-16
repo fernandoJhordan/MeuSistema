@@ -22,14 +22,13 @@ namespace MeuSistema
         private void btnOK_Click(object sender, EventArgs e)
         {
             //instancia da classe
-            Pessoas p1 = new Pessoas();
+            Pessoas p1 = new Pessoas("Fernando",28);
 
-            p1.Nome = "Fernando Michael";
-            p1.Idade = 28;
-            p1.Altura = 1.67;
-            p1.Nacionalidade = "PT";
+            
 
-            p1.falar();
+            p1.teste2();
+
+            
         }
 
     }
