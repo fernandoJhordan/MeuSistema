@@ -13,25 +13,26 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //Array
 
         public FrmMeuSistema()
         {
             InitializeComponent();
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            //Array
+            //instancia da classe
+            Pessoas p1 = new Pessoas();
 
-            int[] valores= new int[] { 10, 20, 30, 40, 50, 60, 70};
+            p1.Nome = "Fernando Michael";
+            p1.Idade = 28;
+            p1.Altura = 1.67;
+            p1.Nacionalidade = "PT";
 
-            for (int i = 0; i < valores.Length; i++)
-            {
-                lista.Items.Add(valores[i]);
-            }
-            
-
+            lblNome.Text = p1.Nome;
+            lblIdade.Text=p1.Idade.ToString();
+            lblAltura.Text=p1.Altura.ToString();    
         }
+
     }
 }
