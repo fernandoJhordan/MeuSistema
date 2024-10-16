@@ -13,36 +13,26 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //modificador // tipo  // texto
-        public string meuNome;
-        private int valor;
-        protected String senha;
-
-        //mais usados
-        int numeros = 0;
-        string endereco;
-        bool estaPago;
-        double valores;
-        decimal vPago;
-
-
+        //Conversão e Operadores aritméticos
+        //int valor1;
+        //int valor2;
+        //int res;
 
         public FrmMeuSistema()
         {
             InitializeComponent();
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
-            meuNome=txtDigite.Text;
-            txtDigite.Text="";
-            txtFrase.Text = meuNome;
-            
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            int valor1 = int.Parse(txtParcela1.Text);
+            int valor2 = int.Parse(txtParcela2.Text);
+            // + , - , * , / , %
+            //res = valor1+valor2;
+            //res = valor1 - valor2;
+            //res = valor1 * valor2;
+            int res = valor1 % valor2;
+            txtResultado.Text=Convert.ToString(res);
         }
     }
 }
