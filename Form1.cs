@@ -13,7 +13,7 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //foreach
+        //foreach p2
 
         public FrmMeuSistema()
         {
@@ -22,10 +22,15 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            string frase = "Meu curso de C# na Zatec Cursos.";
-            foreach (char f in frase)
+            // Foreach parte2
+            List<string> lista_nomes = new List<string>()
             {
-                lista.Items.Add(f);
+                "Leo", "José", "Alex", "Maria", "João", "Marcia"
+            };
+
+            foreach (string ls in lista_nomes)
+            {
+                lista.Items.Add(ls);
             }
 
         }
