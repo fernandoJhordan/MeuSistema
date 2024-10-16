@@ -13,8 +13,7 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //Switch
-        int valor;
+        //FOR
 
         public FrmMeuSistema()
         {
@@ -23,29 +22,13 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            valor=int.Parse(txtValor.Text);
-
-            //Switch
-            //switch (valor)
-            //{
-            //    case 10: //caso for 10 -> 1° opcao
-            //        lblRes.Text = "É 10";
-            //        //instruções
-            //        break;
-            //    case 11:
-            //        lblRes.Text = "É 11";
-            //        break;
-            //    case 50:
-            //        lblRes.Text = "É 50";
-            //        break;
-            //    default:
-            //        lblRes.Text = "Não foi encontrado...";
-            //        break;
-            //}
-
-            //Ternario
-            lblRes.Text = valor == 10 ? "SIMMMM" : "NÃAAAAO";
-
+            int n = 20;
+            for (int i = 1; i <= n; i++) 
+            {
+                lista.Items.Add("Item: "+i);
+            }
+            
+            
         }
     }
 }
