@@ -13,10 +13,8 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //Conversão e Operadores aritméticos
-        //int valor1;
-        //int valor2;
-        //int res;
+        //Operadores
+        float nota1, nota2, nota3, nota4, media;
 
         public FrmMeuSistema()
         {
@@ -25,14 +23,23 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            int valor1 = int.Parse(txtParcela1.Text);
-            int valor2 = int.Parse(txtParcela2.Text);
-            // + , - , * , / , %
-            //res = valor1+valor2;
-            //res = valor1 - valor2;
-            //res = valor1 * valor2;
-            int res = valor1 % valor2;
-            txtResultado.Text=Convert.ToString(res);
+            nota1 = float.Parse(txtNota1.Text);
+            nota2 = float.Parse(txtNota2.Text);
+            nota3 = float.Parse(txtNota3.Text);
+            nota4 = float.Parse(txtNota4.Text);
+            media = (nota1 + nota2 + nota3 + nota4) / 4;
+            
+            txtRes.Text = Convert.ToString(media);
+            
+            //condição IF
+            if (media >= 6)
+            {
+                lblRes.Text = "APROVADO";
+            }
+            else {
+                lblRes.Text = "REPROVADO";
+            }
+
         }
     }
 }
