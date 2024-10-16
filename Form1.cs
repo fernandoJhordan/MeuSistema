@@ -13,7 +13,7 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //While // Do While
+        //foreach
 
         public FrmMeuSistema()
         {
@@ -22,19 +22,11 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            int n = 1;
-            //while (n <= 30) 
-            //{
-            //    lista.Items.Add(n);
-            //    n++;
-            //}
-
-            do
+            string frase = "Meu curso de C# na Zatec Cursos.";
+            foreach (char f in frase)
             {
-                lista.Items.Add(n++);
-            } while (n <= 100);
-
-
+                lista.Items.Add(f);
+            }
 
         }
     }
