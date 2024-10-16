@@ -13,7 +13,7 @@ namespace MeuSistema
 {
     public partial class FrmMeuSistema : Form
     {
-        //foreach p2
+        //Array
 
         public FrmMeuSistema()
         {
@@ -22,16 +22,15 @@ namespace MeuSistema
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            // Foreach parte2
-            List<string> lista_nomes = new List<string>()
-            {
-                "Leo", "José", "Alex", "Maria", "João", "Marcia"
-            };
+            //Array
 
-            foreach (string ls in lista_nomes)
+            int[] valores= new int[] { 10, 20, 30, 40, 50, 60, 70};
+
+            for (int i = 0; i < valores.Length; i++)
             {
-                lista.Items.Add(ls);
+                lista.Items.Add(valores[i]);
             }
+            
 
         }
     }
